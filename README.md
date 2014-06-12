@@ -1,6 +1,8 @@
 MEEN boilerplate
 ================
 
+forked from https://github.com/subeeshb/MEEN-starter and updated for express 4
+
 MongoDB, Ember.js, Express and Node.js
 
 
