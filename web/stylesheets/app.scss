@@ -1,0 +1,70 @@
+@import "fonts";
+
+$LIGHT_COLOR: #f0f0f0;
+$DARK_COLOR: #151515;
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background-color: $LIGHT_COLOR;
+  overflow-x: hidden;
+}
+
+.container {
+  font-family: Lato, sans-serif;
+  font-size: 62.5%;
+  margin: 3px;
+}
+
+.title {
+  font-size: 1.8rem;
+}
+
+.new-todo-panel {
+  background-color: white;
+  padding: 5px;
+  margin: 5px;
+
+  input, button {
+    font-size: 18pt;
+  }
+}
+
+.todo-list {
+  padding: 10px;
+  font-size: 10pt;
+  list-style-type: initial;
+  list-style-position: inside;
+
+  li {
+
+    &.completed {
+      text-decoration: line-through;
+      opacity: 0.3;
+    }
+  }
+}
+
+.delete-link {
+  font-size: x-small;
+}
+
+.info-panel {
+  @extend .panel;
+  margin: 10px 5px;
+  font-size: 0.8rem;
+  line-height: 1rem;
+
+  background-color: white;
+  padding: 0.3em 0.5em;
+  border-radius: 5px;
+  border: 1px solid $DARK_COLOR;
+
+  p {
+    margin: 10px 0;
+  }
+
+  em {
+    font-style: italic;
+  }
+}

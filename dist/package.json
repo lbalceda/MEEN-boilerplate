@@ -1,0 +1,33 @@
+{
+  "name": "meenstarter",
+  "description": "meenstarter",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "express": "4.x",
+    "mongojs": "~0.9.10",
+    "body-parser": "*",
+    "passport": "~0.2.0",
+    "passport-local": "~1.0.0"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.4",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-copy": "~0.4.1",
+    "grunt-replace": "~0.4.4",
+    "grunt-shell": "~0.3.1",
+    "grunt-sass": "~0.11.0",
+    "grunt-contrib-sass": "~0.7.3",
+    "grunt-ember-handlebars": "~0.7.0",
+    "grunt-contrib-concat": "~0.3.0",
+    "gulp": "~3.5.5",
+    "gulp-clean": "~0.2.4",
+    "gulp-ember-handlebars": "~0.6.0",
+    "gulp-concat": "~2.1.7",
+    "gulp-compass": "~1.1.4",
+    "gulp-replace": "~0.2.0",
+    "gulp-nodemon": "~1.0.0",
+    "gulp-uglify": "~0.2.1",
+    "gulp-if": "0.0.5"
+  }
+}

@@ -1,0 +1,12 @@
+<h2 class="title">Todo list</h2>
+
+<div class="container">
+	<div class="info-panel">
+		<p>Add todos here</p>
+	</div>
+
+	{{new-todo onCreate="newTodoAdded"}}
+
+	{{todo-list todoItems=model onDelete="todoItemDeleted"}}
+</div>
+
