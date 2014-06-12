@@ -1,7 +1,11 @@
 <div class="container">
 	<div class="info-panel">
-    <p>
-        <strong>{{#link-to 'todo' id="todo-link"}}mongo todo test{{/link-to}}</strong>
-    </p>
+        <p>
+            <strong>{{#link-to 'todo' id="todo-link"}}is mongo working?{{/link-to}}</strong>
+            <strong>{{#link-to 'chart' id="chart-link"}}chart 1{{/link-to}}</strong>
+        </p>
+        <div>
+            {{time-series-chart lineData=model}}
+        </div>
 	</div>
 </div>
