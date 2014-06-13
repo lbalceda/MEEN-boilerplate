@@ -163,20 +163,16 @@ App.IndexRoute = Ember.Route.extend({
   model: function() {
     return [
       {
-        value: 64,
-        label: 'San Francisco'
+      value: 825111,
+      label: 'San Francisco'
       },
       {
-        value: 93,
-        label: 'Phoenix'
+      value: 984299,
+      label: 'San Jose'
       },
       {
-        value: 66,
-        label: 'Miami'
-      },
-      {
-        value: 103,
-        label: 'New York'
+      value: 400740,
+      label: 'Oakland'
       }
     ];
   }
