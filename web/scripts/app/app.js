@@ -11,11 +11,11 @@ App.IndexRoute = Ember.Route.extend({
     return [
         {
             "time": d3.time.format('%Y-%m-%d').parse("2013-05-01"),
-            "value": 40
+            "value": 80
         },
         {
             "time": d3.time.format('%Y-%m-%d').parse("2013-05-02"),
-            "value": 80
+            "value": 40
         },
         {
             "time": d3.time.format('%Y-%m-%d').parse("2013-05-03"),

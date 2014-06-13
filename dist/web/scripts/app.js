@@ -110,7 +110,7 @@ function program3(depth0,data) {
   options = {hash:{
     'id': ("chart-link")
   },inverse:self.noop,fn:self.program(3, program3, data),contexts:[depth0],types:["STRING"],hashContexts:hashContexts,hashTypes:hashTypes,data:data};
-  stack2 = ((stack1 = helpers['link-to'] || depth0['link-to']),stack1 ? stack1.call(depth0, "chart", options) : helperMissing.call(depth0, "link-to", "chart", options));
+  stack2 = ((stack1 = helpers['link-to'] || depth0['link-to']),stack1 ? stack1.call(depth0, "index", options) : helperMissing.call(depth0, "link-to", "index", options));
   if(stack2 || stack2 === 0) { data.buffer.push(stack2); }
   data.buffer.push("</strong>\n        </p>\n        <div>\n            ");
   hashContexts = {'lineData': depth0};
@@ -164,11 +164,11 @@ App.IndexRoute = Ember.Route.extend({
     return [
         {
             "time": d3.time.format('%Y-%m-%d').parse("2013-05-01"),
-            "value": 40
+            "value": 80
         },
         {
             "time": d3.time.format('%Y-%m-%d').parse("2013-05-02"),
-            "value": 80
+            "value": 40
         },
         {
             "time": d3.time.format('%Y-%m-%d').parse("2013-05-03"),
