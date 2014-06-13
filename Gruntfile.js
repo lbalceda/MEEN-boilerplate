@@ -37,7 +37,9 @@ module.exports = function(grunt) {
                     'web/libs/handlebars-1.1.2.js',
                     'web/libs/ember-1.3.2.js',
                     'web/libs/d3.min.js',
-                    'web/libs/ember-charts.js',
+                    'web/libs/addepar_resize_handler.js',
+                    'web/libs/addepar_style_bindings.js',
+                    'web/libs/ember-charts.js'
                     ],
                 dest:'dist/web/scripts/libs.js'
             },
