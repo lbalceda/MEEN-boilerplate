@@ -9,18 +9,22 @@ App.Router.map(function() {
 App.IndexRoute = Ember.Route.extend({
   model: function() {
     return [
-        {
-            "time": d3.time.format('%Y-%m-%d').parse("2013-05-01"),
-            "value": 80
-        },
-        {
-            "time": d3.time.format('%Y-%m-%d').parse("2013-05-02"),
-            "value": 40
-        },
-        {
-            "time": d3.time.format('%Y-%m-%d').parse("2013-05-03"),
-            "value": 120
-        }
+      {
+        value: 64,
+        label: 'San Francisco'
+      },
+      {
+        value: 93,
+        label: 'Phoenix'
+      },
+      {
+        value: 66,
+        label: 'Miami'
+      },
+      {
+        value: 103,
+        label: 'New York'
+      }
     ];
   }
 });

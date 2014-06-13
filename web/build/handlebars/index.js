@@ -35,12 +35,12 @@ function program3(depth0,data) {
   stack2 = ((stack1 = helpers['link-to'] || depth0['link-to']),stack1 ? stack1.call(depth0, "index", options) : helperMissing.call(depth0, "link-to", "index", options));
   if(stack2 || stack2 === 0) { data.buffer.push(stack2); }
   data.buffer.push("</strong>\n        </p>\n        <div>\n            ");
-  hashContexts = {'lineData': depth0};
-  hashTypes = {'lineData': "ID"};
+  hashContexts = {'data': depth0};
+  hashTypes = {'data': "ID"};
   options = {hash:{
-    'lineData': ("model")
+    'data': ("model")
   },contexts:[],types:[],hashContexts:hashContexts,hashTypes:hashTypes,data:data};
-  data.buffer.push(escapeExpression(((stack1 = helpers['time-series-chart'] || depth0['time-series-chart']),stack1 ? stack1.call(depth0, options) : helperMissing.call(depth0, "time-series-chart", options))));
+  data.buffer.push(escapeExpression(((stack1 = helpers['pie-chart'] || depth0['pie-chart']),stack1 ? stack1.call(depth0, options) : helperMissing.call(depth0, "pie-chart", options))));
   data.buffer.push("\n        </div>\n	</div>\n</div>");
   return buffer;
   

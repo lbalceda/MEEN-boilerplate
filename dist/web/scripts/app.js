@@ -113,12 +113,12 @@ function program3(depth0,data) {
   stack2 = ((stack1 = helpers['link-to'] || depth0['link-to']),stack1 ? stack1.call(depth0, "index", options) : helperMissing.call(depth0, "link-to", "index", options));
   if(stack2 || stack2 === 0) { data.buffer.push(stack2); }
   data.buffer.push("</strong>\n        </p>\n        <div>\n            ");
-  hashContexts = {'lineData': depth0};
-  hashTypes = {'lineData': "ID"};
+  hashContexts = {'data': depth0};
+  hashTypes = {'data': "ID"};
   options = {hash:{
-    'lineData': ("model")
+    'data': ("model")
   },contexts:[],types:[],hashContexts:hashContexts,hashTypes:hashTypes,data:data};
-  data.buffer.push(escapeExpression(((stack1 = helpers['time-series-chart'] || depth0['time-series-chart']),stack1 ? stack1.call(depth0, options) : helperMissing.call(depth0, "time-series-chart", options))));
+  data.buffer.push(escapeExpression(((stack1 = helpers['pie-chart'] || depth0['pie-chart']),stack1 ? stack1.call(depth0, options) : helperMissing.call(depth0, "pie-chart", options))));
   data.buffer.push("\n        </div>\n	</div>\n</div>");
   return buffer;
   
@@ -162,18 +162,22 @@ App.Router.map(function() {
 App.IndexRoute = Ember.Route.extend({
   model: function() {
     return [
-        {
-            "time": d3.time.format('%Y-%m-%d').parse("2013-05-01"),
-            "value": 80
-        },
-        {
-            "time": d3.time.format('%Y-%m-%d').parse("2013-05-02"),
-            "value": 40
-        },
-        {
-            "time": d3.time.format('%Y-%m-%d').parse("2013-05-03"),
-            "value": 120
-        }
+      {
+        value: 64,
+        label: 'San Francisco'
+      },
+      {
+        value: 93,
+        label: 'Phoenix'
+      },
+      {
+        value: 66,
+        label: 'Miami'
+      },
+      {
+        value: 103,
+        label: 'New York'
+      }
     ];
   }
 });
